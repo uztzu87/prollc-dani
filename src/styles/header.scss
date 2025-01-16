@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+  background: var(--color-background-primary);
+
+  &__logo-nav-ctr {
+    box-sizing: content-box;
+    margin: 0 auto;
+    height: 100px;
+    width: 90%;
+    max-width: 1920px;
+    padding: 0 30px;
+    overflow: hidden;
+  }
+
+  &__logo-ctr {
+    float: left;
+    position: relative;
+    top: 20px;
+
+    > a {
+
+      > svg {
+        display: block;
+        height: 60px;
+      }
+    }
+  }
+
+  &__nav-ctr {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+}

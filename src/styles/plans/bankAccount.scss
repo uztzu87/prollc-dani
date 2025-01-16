@@ -1,0 +1,164 @@
+.bankAccount {
+
+  &__bank-details {
+    display: flex;
+    padding: 25px;
+    background-color: var(--color-background-secondary);
+    border-radius: 3px;
+    margin-bottom: 50px;
+
+    &-features {
+      width: 60%;
+      margin-right: 5%;
+      text-align: left;
+  
+      > h4 {
+        color: var(--color-primary);
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+  
+      > ul > li {
+        font-size: 14px;
+        margin-top: 2px;
+        border-bottom: 1px solid var(--color-border-secondary);
+        padding: 5px 0;
+
+        &:last-of-type {
+          border-bottom: 0;
+          padding-bottom: 0;
+        }
+  
+        > svg {
+          margin-right: 6px;
+          width: 14px;
+          fill: var(--color-primary);
+        }
+      }
+    }
+
+    &-image {
+      width: 35%;
+
+      img {
+        border-radius: 3px;
+      }
+    }
+
+  }
+
+  &__benefits {
+    text-align: left;
+    margin-bottom: 25px;
+
+    > ul {
+      padding: 25px;
+      background-color: var(--color-primary);
+      border-radius: 5px;
+
+      > h3 {
+        color: var(--color-text-secondary);
+        margin-bottom: 25px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--color-text-secondary);
+
+      > svg {
+        stroke: var(--color-text-secondary);
+        stroke-width: 3;
+        width: 21px;
+        margin-right: 5px;
+        vertical-align: top;
+      }
+    }
+
+      > li {
+      display: flex;
+      font-size: 15px;
+      padding-bottom: 15px;
+      color: var(--color-text-secondary);
+
+      &:last-of-type {
+        padding-bottom: 0;
+      }
+
+        > span {
+
+          > svg {
+            margin-right: 6px;
+            width: 14px;
+            fill: white;
+          }
+        }
+      }
+    }
+  }
+  
+  &__addon {
+    border: 1px solid var(--color-border-primary);
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+
+    &--selected {
+      border: 1px solid var(--color-primary);
+      box-shadow: 0 0 0 2px var(--color-primary);
+    }
+    
+    &-title-inner-ctr {
+      display: flex;
+      align-items: center;
+      text-align: left;
+    }
+
+    &-select {
+      width: 5%;
+      margin-right: 25px;
+
+      > input[type=checkbox] {
+        transform: scale(1.6);
+      }
+    }
+
+    &-title {
+      width: 70%;
+
+      > h3 {
+        font-size: 24px;
+        color: var(--color-primary);
+        margin-bottom: 10px;
+      }
+
+      > ul > li {
+        > svg {
+          margin-right: 6px;
+          width: 14px;
+          fill: var(--color-primary);
+        }
+      }
+
+      &-notice {
+        margin-top: 10px;
+        font-size: 13px;
+        color: var(--color-notice);
+        font-style: italic;
+      }
+      
+    }
+
+    &-price {
+      width: 25%;
+      text-align: right;
+      font-size: 24px;
+      font-weight: bold;
+      color: var(--color-primary);
+    }
+
+    &-details {
+      border-top: 1px solid black;
+      margin-top: 15px;
+      padding-top: 25px;
+    }
+  }
+
+}

@@ -1,0 +1,149 @@
+.index {
+
+  &__image-ctr {
+    display: block;
+    height: 350px;
+    background-position: bottom;
+  }
+
+  &__intro-ctr {
+    background: var(--color-background-secondary);
+    padding: 50px 0;
+  }
+
+  &__intro-inner-ctr {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1920px;
+    display: flex;
+  }
+
+  &__intro {
+
+    &-text {
+      width: 48%;
+      margin-right: 4%;
+      height: 100%;
+
+      > h1 {
+        color: var(--color-primary);
+      }
+
+      > p {
+        color: var(--color-primary);
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 35px;
+      }
+    }
+  
+    &-image {
+      width: 48%;
+      height: 100%;
+
+      img {
+        border-radius: 5px;
+      }
+    }
+  
+    &-form-link {
+      display: inline-block;
+      padding: 15px;
+      margin-top: 5px;
+      color: var(--color-text-secondary);
+      font-size: 22px;
+      font-weight: bold;
+      background: var(--color-secondary);
+      border-radius: 3px;
+
+      &:hover {
+        background: var(--color-secondary-dark);
+      }
+    }
+
+  }
+
+  &__features-ctr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--color-background-secondary);
+    border-radius: 3px;
+    margin-top: 20px;
+  }
+
+  &__features-feature {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 6px 0;
+    border-bottom: 1px solid var(--color-border-secondary);
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+
+  &__check-icon {
+    padding-right: 10px;
+
+    > svg {
+      width: 14px;
+      fill: var(--color-primary);
+    }
+  }
+
+  &__why-prollc-ctr {
+    padding: 50px 25px 0 25px;
+  }
+
+  &__why-prollc-inner-ctr {
+    margin: 0 auto;
+    max-width: 840px;
+    padding: 25px;
+    border: 1px solid var(--color-primary);
+    border-radius: 3px;
+    background: var(--color-background-primary);
+
+    > h2 {
+      text-align: center;
+      color: var(--color-primary);
+      margin-bottom: 25px;
+      font-size: 32px;
+    }
+
+    > ol {
+      list-style-type: decimal;
+      margin-left: 20px;
+
+      > li {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 860px) {
+  .index {
+
+    &__intro-inner-ctr {
+      flex-direction: column-reverse;
+    }
+
+    &__intro {
+      
+      &-text {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+      }
+    
+      &-image {
+        width: 100%;
+        margin: 0 0 50px 0;
+      }
+    }
+  }
+
+}

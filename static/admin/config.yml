@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: iamtraviscole/prollc
+
+media_folder: static/assets
+public_folder: /assets
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "blog"
+    create: true
+    slug: "{{day}}-{{month}}-{{year}}_{{slug}}"
+    fields:
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}

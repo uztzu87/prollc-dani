@@ -1,0 +1,45 @@
+.checkout {
+
+  &__total {
+    margin-bottom: 25px;
+
+    &-price-ctr {
+      display: inline-block;
+      padding: 25px;
+      min-width: 225px;
+      border: 1px solid var(--color-primary-light);
+      border-radius: 5px;
+    }
+    
+    &-price {
+      color: var(--color-primary);
+      display: inline-block;
+      font-size: 44px;
+      font-weight: bold;
+      margin-bottom: 5px;
+
+      > span {
+        color: var(--color-primary-light);
+        font-size: 16px;
+        font-weight: normal;
+        margin-left: 5px;
+      }
+    }
+
+    &-recurring {
+      color: var(--color-primary);
+      font-style: italic;
+    }
+  }
+
+  &__checkout-btn {
+    font-size: 22px;
+    min-width: 225px;
+    font-weight: bold;
+    color: var(--color-text-secondary);
+    background-color: var(--color-primary);
+    border-radius: 3px;
+    padding: 12px 14px;
+  }
+
+}

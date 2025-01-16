@@ -1,0 +1,183 @@
+.proAddress {
+  display: inline-block;
+
+  > fieldset {
+    display: inline-block;
+    padding: 25px;
+    border: 1px solid var(--color-border-primary);
+    border-radius: 3px;
+  }
+
+  &__input-ctr {
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-align: left;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    > input[type='radio'] {
+      margin-right: 10px;
+    }
+  }
+
+  &__renew-asterisk {
+    float: right;
+    margin-top: 10px;
+    font-style: italic;
+    color: var(--color-text-primary-light);
+    font-size: 12px;
+  }
+
+  &__address-ctr {
+    margin-top: 50px;
+
+    > h3 {
+      font-size: 18px;
+      color: var(--color-primary);
+      margin-bottom: 25px;
+    }
+  }
+
+  &__address-input-outer-ctr {
+    margin: 0 auto;
+    max-width: 515px;
+
+    & div:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__address-input-ctr {
+    display: inline-block;
+    margin: 0 15px 15px 0;
+    width: 250px;
+
+    &.street {
+      width: 300px;
+    }
+
+    &.suite {
+      width: 200px;
+    }
+
+    &.zipcode {
+      width: 200px;
+    }
+
+    &.country {
+      width: 300px;
+    }
+
+    > label {
+      display: block;
+      font-size: 13px;
+      font-weight: 300;
+      text-align: left;
+      margin-bottom: 4px;
+    }
+
+    > input {
+      width: 100%;
+    }
+  }
+
+  &__virtual-details {
+    display: flex;
+    padding: 25px;
+    background-color: var(--color-background-secondary);
+    border-radius: 3px;
+
+    &-features {
+      width: 55%;
+      margin-right: 5%;
+      text-align: left;
+  
+      > h4 {
+        color: var(--color-primary);
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+  
+      > ul > li {
+        font-size: 14px;
+        margin-top: 2px;
+        border-bottom: 1px solid var(--color-border-secondary);
+        padding: 5px 0;
+
+        &:last-of-type {
+          border-bottom: none;
+          padding-bottom: 0;
+        }
+  
+        > svg {
+          margin-right: 6px;
+          width: 14px;
+          fill: var(--color-primary);
+        }
+      }
+    }
+
+    &-image {
+      width: 40%;
+
+      img {
+        border-radius: 3px;
+      }
+    }
+
+  }
+  
+
+  &__virtual-header {
+    color: var(--color-primary);
+    font-weight: bold;
+  }
+
+}
+
+@media (max-width: 650px) {
+  .proAddress {
+
+    &__address-input-outer-ctr {
+      margin: 0 auto;
+      max-width: 250px;
+    }
+
+    &__address-input-ctr {
+      margin-right: 0;
+
+      &.street {
+        width: 250px
+      }
+
+      &.suite {
+        width: 250px;
+      }
+
+      &.zipcode {
+        width: 250px;
+      }
+
+      &.country {
+        width: 250px;
+      }
+    }
+
+    &__virtual-details {
+      flex-direction: column;
+
+      &-features {
+        width: 100%;
+      }
+
+      &-image {
+        width: 100%;
+        margin-top: 15px;
+      }
+    }
+  }
+
+}
